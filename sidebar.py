@@ -232,7 +232,7 @@ def _render_simulation_sidebar(layout_mode, turbine_files, hub_height_defaults):
     turbine_label = st.selectbox("Turbine", list(turbine_files))
     wake_label = st.selectbox("Wake-Modell", list(WAKE_MODEL_OPTIONS))
     plane_height = st.slider("Colormap-Hoehe [m]", 20.0, 250.0, hub_height_defaults[turbine_label], 5.0)
-    grid_points = st.slider("Colormap-Aufloesung", 25, 150, 80, 5)
+    grid_points = st.slider("Colormap-Aufloesung", 25, 150, 50, 5)
     show_wind_arrows = st.checkbox("Windrichtungspfeile", value=True)
     st.markdown("**Heatmap-Skalierung**")
     heatmap_scale_mode = st.radio(
