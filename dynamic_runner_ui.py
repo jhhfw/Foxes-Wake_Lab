@@ -264,7 +264,7 @@ def render_dynamic_runner(base_config):
         st.subheader("Live-Parameter")
         block_minutes = st.number_input("Blockgroesse [min]", 0.1, 60.0, 0.5, 0.1, key="dyn_block_minutes")
         st.caption("Kleinere Werte zeigen Boeen und Wake-Pakete fluessiger, erhoehen aber den Darstellungsaufwand.")
-        auto_delay_s = st.number_input("Anzeige-Takt [s]", 0.2, 10.0, 0.8, 0.2, key="dyn_auto_delay_s")
+        auto_delay_s = st.number_input("Anzeige-Takt [s]", 0.2, 10.0, 1.5, 0.2, key="dyn_auto_delay_s")
         live_ws = st.slider("Windgeschwindigkeit [m/s]", 3.0, 25.0, float(live.wind_speed), 0.5, key="dyn_live_ws")
         live_wd = st.slider("Windrichtung [deg]", 0.0, 360.0, float(live.wind_direction), 1.0, key="dyn_live_wd")
         live_ti = st.slider(
